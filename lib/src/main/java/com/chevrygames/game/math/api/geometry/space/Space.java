@@ -5,7 +5,7 @@ package com.chevrygames.game.math.api.geometry.space;
  */
 public interface Space {
 
-    int getDimensional();
+    int getDimension();
 
     boolean hasSubSpace();
 
