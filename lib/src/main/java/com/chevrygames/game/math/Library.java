@@ -4,6 +4,7 @@
 package com.chevrygames.game.math;
 
 public class Library {
+
     public boolean someLibraryMethod() {
         return true;
     }
