@@ -13,12 +13,26 @@ public interface Space {
     int getDimension();
 
     /**
-     * Checks if the space has a subspace of dimension <code>n-1</code>.
+     * Checks if the space has a subspace of dimension <code>n-1</code>. A subspace has a superspace.
      *
      * @return <code>true</code> if the space has a subspace of dimension <code>n-1</code>;
      *         <code>false</code> otherwise.
+     *
+     * @see #getSubSpace()
+     * @see #hasSuperSpace()
      */
     boolean hasSubSpace();
+
+    /**
+     * Checks if the space has a superspace of dimension <code>n+1</code>. A superspace has a subspace.
+     *
+     * @return <code>true</code> if the space has a subspace of dimension <code>n-1</code>;
+     *         <code>false</code> otherwise.
+     *
+     * @see #getSuperSpace()
+     * @see #hasSubSpace()
+     */
+    boolean hasSuperSpace();
 
     Space getSubSpace();
 
