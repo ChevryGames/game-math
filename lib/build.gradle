@@ -8,17 +8,13 @@
  */
 
 plugins {
-    // Apply the groovy plugin to also add support for Groovy (needed for Spock)
-    id 'groovy'
-
-    // Apply the java-library plugin for API and implementation separation.
+    id 'groovy' // Needed for Spock
     id 'java-library'
 
     id "io.freefair.lombok" version "6.4.0"
 }
 
 repositories {
-    // Use Maven Central for resolving dependencies.
     mavenCentral()
 }
 
@@ -27,9 +23,7 @@ dependencies {
 
 testing {
     suites {
-        // Configure the built-in test suite
         test {
-            // Use Spock test framework
             useSpock('2.1-groovy-3.0')
         }
     }
