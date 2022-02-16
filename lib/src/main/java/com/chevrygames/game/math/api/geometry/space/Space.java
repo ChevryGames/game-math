@@ -42,5 +42,11 @@ public interface Space {
      */
     Space getSubSpace();
 
+    /**
+     * Gets the superspace of dimension <code>n+1</code> of the space, if it exists.
+     *
+     * @return the superspace of dimension <code>n+1</code> of the space, if {@link #hasSuperSpace()} returns <code>true</code>;
+     *         <code>null</code> otherwise, which is when {@link #hasSuperSpace()} returns <code>false</code>.
+     */
     Space getSuperSpace();
 }
