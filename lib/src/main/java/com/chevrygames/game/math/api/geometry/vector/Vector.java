@@ -2,6 +2,7 @@ package com.chevrygames.game.math.api.geometry.vector;
 
 import com.chevrygames.game.math.api.geometry.space.Space;
 
+// TODO : Javadoc
 // TODO : Compare strictly equals
 public interface Vector <TSpace extends Space> extends Comparable<Vector<TSpace>> {
 
