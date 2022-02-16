@@ -35,10 +35,10 @@ public interface Space {
     boolean hasSuperSpace();
 
     /**
-     * Gets the subspace of dimension <code>n+1</code> of the space, if it exists.
+     * Gets the subspace of dimension <code>n-1</code> of the space, if it exists.
      *
-     * @return the subspace of dimension <code>n+1</code> of the space, if {@link #getSubSpace()} returns <code>true</code>;
-     *         <code>null</code> otherwise, which is when {@link #getSubSpace()} returns <code>false</code>.
+     * @return the subspace of dimension <code>n+1</code> of the space, if {@link #hasSubSpace()} returns <code>true</code>;
+     *         <code>null</code> otherwise, which is when {@link #hasSubSpace()} returns <code>false</code>.
      */
     Space getSubSpace();
 
