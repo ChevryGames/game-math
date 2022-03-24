@@ -25,5 +25,7 @@ openDraftPR: true
 copyIssueDescriptionToPR: true
 copyIssueLabelsToPR: true
 copyIssueAssigneeToPR: true
+copyIssueProjectsToPR: false
+copyIssueMilestoneToPR: false
 
 commentMessage: 'Branch [`${branchName}`](${repository.html_url}/tree/${branchName}) created for issue #${issue.number}.'
