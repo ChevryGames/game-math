@@ -14,6 +14,10 @@ branches:
   - label: '*'
     skip: true
 
+# For an issue with multiple branches, there must be only one branch from where to create the PR (pull request).
+# The other branches are considered as used for organizing purposes.
+autoCloseIssue: true
+
 openDraftPR: true
 copyIssueDescriptionToPR: true
 copyIssueLabelsToPR: true
