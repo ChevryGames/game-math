@@ -1,5 +1,5 @@
 gitSafeReplacementChar: '-'
-branchName: '${issue.title,}'
+branchName: '${issue.title,}' # `,` for all lowercase
 
 branches:
   - label: bug
