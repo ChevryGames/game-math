@@ -1,15 +1,16 @@
 gitSafeReplacementChar: '-'
 branchName: '${issue.title,}' # `,` for all lowercase
 
+# `issue-` is required for `autoCloseIssue`
 branches:
   - label: bug
-    prefix: fix/${issue.number}/
+    prefix: fix/issue-${issue.number}/
   - label: feature
-    prefix: feature/${issue.number}/
+    prefix: feature/issue-${issue.number}/
   - label: doc
-    prefix: doc/${issue.number}/
+    prefix: doc/issue-${issue.number}/
   - label: QA
-    prefix: qa/${issue.number}/
+    prefix: qa/issue-${issue.number}/
   - label: '*'
     skip: true
 
