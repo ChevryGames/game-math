@@ -4,13 +4,13 @@ branchName: 'issue-${issue.number}/${issue.title,}' # `,` for all lowercase
 # `issue-` is required for `autoCloseIssue`
 branches:
   - label: bug
-    prefix: fix/
+    prefix: 'fix/'
   - label: feature
-    prefix: feature/
+    prefix: 'feature/'
   - label: doc
-    prefix: doc/
+    prefix: 'doc/'
   - label: QA
-    prefix: qa/
+    prefix: 'qa/'
   - label: '*'
     skip: true
 
